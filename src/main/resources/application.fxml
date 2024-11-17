@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.?>
+<?import javafx.scene.layout.?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppController">
+    <TableView fx:id="tablaCopias">
+        <columns>
+            <TableColumn text="ID" />
+            <TableColumn text="Estado" />
+            <TableColumn text="Cantidad" />
+        </columns>
+    </TableView>
+    <HBox spacing="10">
+        <Button text="Agregar Copia" onAction="#agregarCopia"/>
+        <Button text="Eliminar Copia" onAction="#eliminarCopia"/>
+        <Button text="Actualizar Copia" onAction="#actualizarCopia"/>
+    </HBox>
+</VBox>
